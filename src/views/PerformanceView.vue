@@ -4,16 +4,15 @@
       [Place filter component here]
     </div>
     <div class="c-dashboard__header">
-      <PerformanceChart
-        :PerformanceChart="PerformanceChart"
-      />
+      <performance-chart
+        :performanceChart="performanceChart"
+      ></performance-chart>
     </div>
-    {{performanceChart}}
   </div>
 </template>
 
+
 <script>
-import { mapActions, mapGetters } from 'vuex'
 import PerformanceChart from '../components/PerformanceChart.vue'
 
 export default {
