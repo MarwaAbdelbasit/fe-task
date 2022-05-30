@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PerformanceView from '../views/PerformanceView.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +14,7 @@ const routes = [
   {
     path: '/performance',
     name: 'performance',
-    component: () => import('../views/PerformanceView.vue')
+    component: PerformanceView
   }
 ]
 
